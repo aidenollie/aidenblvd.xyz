@@ -1,0 +1,338 @@
+<!doctype html>
+
+
+<html lang="en">
+
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+    	body {
+    		background-color: gray;
+
+    	}
+    	.landing{
+    		position: relative;
+    	}
+    	.img-fluid{
+    		width: 100%;
+    		height: auto;
+	    	}
+
+    	.caption {
+		    position: absolute;
+		    top: 40%;
+		    left: 0;
+		    width: 100%;
+		    color: floralwhite;
+
+		}
+		.row{
+			margin-right: 0;
+			margin-left: 0;
+			border-bottom: 0px solid black;
+			padding-top: 0px;
+		}
+		h1{
+			font-size: 5.5vmin;
+		}
+		.wrapper{
+			position: absolute;
+		}
+		.up{
+			position: sticky;
+			margin-left: 90%;
+			margin-top: 0;
+			margin-bottom: 0;
+			top: 7.5%;
+			z-index: 100;
+		}
+		.up h1{
+			font-size: 10vmin;
+			color: whitesmoke;
+		}
+		.about{
+			position: relative;
+			top: 0vmin;
+		}
+		.description {
+			font-size: 5vmin;
+			color: black;
+		}
+		a{
+			color: darkblue;
+		}
+		.astext {
+		    background:none;
+		    border:none;
+		    margin:0;
+		    padding:0;
+		    cursor: pointer;
+		    color: darkblue;
+		}
+		#God{
+			background-color: lightgray;
+		}
+		#baptism{
+			width: 100%;
+			height: auto;
+		}
+		#quote {
+			background-color: gray;
+		}
+		#creed {
+			font-size: 4vmin;
+			color: black;
+		}
+		#collapsable{
+			display: none;
+		}
+		#tech{
+			background-color: white;
+		}
+		#domain {
+			width: 100%;
+			height: auto;
+		}
+		#crypto{
+			background-color: #4c47f7;
+		}
+		#sky{
+			background-color: #cbe0f3;
+		}
+		#photo {
+			background-color: wheat;
+		}
+    </style>
+  </head>
+
+
+
+
+<!-- lake photo and welcome text-->
+  <body>
+  	<!--<div class="container-fluid">-->
+	  	<div class="text-center landing" id="landing">
+		  	{% load static %}
+		  	<img src="{% static 'img/Bridge.jpg' %}" class="img-fluid" alt="">
+		  	<div class="caption">
+		  		<h1>Hi There!</h1>
+		  		<h2>My name is Aiden Boulevard :)</h2><br><br>
+		  		<h1 class="down">&#8595;</h1>
+		    </div>
+			</div>
+
+			<!-- Nav Bar -->
+			<nav class="navbar sticky-top navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#">
+			    <img src="{% static 'img/favicon.ico' %}" width="50" height="50" class="d-inline-block align-top" alt=""></a>
+			</nav>
+		<!-- photo, about me, links-->
+			<div class="row row-no-gutters about">
+				<div class="col-md-6">
+					<img src="{% static 'img/MeSuitBlurryBackground.jpg' %}" class="img-fluid" alt="">
+				</div>
+				<div class="col-md-6 text-center">
+					<div>
+						<p class="description">
+						I'm a highschooler (class of 2024!) with a passion for 
+						<a href="#God">God</a>, <br>
+						 <a href="#tech">tech</a>, <br>
+						  and <a href=#crypto>crypto</a>.<br>
+						    I also enjoy <br><a href=#running>running</a>,<br>
+						     <a href="#waterskiing">water skiing</a>,<br>
+						      <a href="#art">3d art</a>,<br>
+						       <a href="#games">strategy games</a>,<br>
+						        <a href="#music">listening to music</a>,<br>
+						         and occasionally some <br><a href="#photo">photo editing!</a><br>
+					    </p>
+					</div>
+				</div>
+			</div>
+
+	<!-- God -->
+		<div class="row" id="God">
+			<div class="col-md-6 text-center">
+				<blockquote class="description">
+					<p>“I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.”</p>
+					<footer>C. S. Lewis<cite title=""></cite></footer>
+				</blockquote>
+				<p class="description">
+					I've believed in God since six and was baptized at ten. Since then I've learned a lot about <em><b>why</b></em> I believe what I believe.
+				</p>
+				<p class="description">
+				My beliefs can be summed up by the apostles creed:
+				</p>
+				<p class="well" id="creed">
+	I believe in God, the Father almighty, <br>
+	  creator of heaven and earth.<br><br>
+
+	I believe in Jesus Christ, his only Son, our Lord,<br>
+	  who was conceived by the Holy Spirit<br>
+	  and born of the virgin Mary.<br>
+	  He suffered under Pontius Pilate,<br>
+	  was crucified, died, and was buried;<br>
+	  he descended to hell.<br>
+	  The third day he rose again from the dead.<br>
+	  He ascended to heaven<br>
+	  and is seated at the right hand of God the Father almighty.<br>
+	  From there he will come to judge the living and the dead.<br><br>
+
+	I believe in the Holy Spirit,<br>
+	  the holy catholic church,<br>
+	  the communion of saints,<br>
+	  the forgiveness of sins,<br>
+	  the resurrection of the body,<br>
+	  and the life everlasting. Amen.<br>
+	</p>
+
+			</div>
+			<div class="col-md-6">
+			<img src="{% static 'img/Baptism.jpg' %}" id="baptism" alt="">
+			</div>
+		</div>
+
+
+	<!-- Tech -->
+		<div class="row" id="tech">
+			<div class="col-md-4">
+				<img src="{% static 'img/MyComputer.jpg' %}" id="computer" class="img-fluid" alt="">
+
+			</div>
+			<div class="col-md-4 text-center">
+				<p class="description">
+					I've always enjoyed technology -both the hardware and software aspects- I built my own 
+					<button class="astext" onclick="myFunction()">computer</button> <br>
+					<span  id="collapsable">
+						Cpu: Ryzen 5 3600<br>
+						Ram: 16gb 3200 mhz<br>
+						Mobo: Gigabyte b450 Aorus M<br>
+						Gpu: Asus strix rtx 2060<br>
+						case: Nzxt h510<br><br>
+					</span>
+					at the beginning of 2021 and have been using it ever since! I've learned the basics of python, html, css, and dabbled in javascript. I wanted to gain more experience using these which led me to try out full stack web development.
+				</p>
+
+			</div>
+			<div class="col-md-4">
+				<img src="{% static 'img/Desk.jpg' %}" id="desk" class="img-fluid" alt="">
+				<p class="description">That's how this website was born! I get to use some python for the backend(django) then html, css, and javascript for the frontend</p>
+
+			</div>
+		</div>
+
+	<!-- crypto -->
+		<div class="row" id="crypto">
+			<div class="col-md-6 text-center">
+				<p class="description">
+					I got into cryptocurrency August of 2021 and have discovered a new world of personal finance. I now own multiple coins, tokens, and nfts. My favorite dapp so far has been 
+					<a style="color: yellow;" href="https:\\pooltogether.com" target="_blank">PoolTogether.</a>
+					PoolTogether is a prize savings account that makes it fun and exciting to save money! Every dollar you deposit gives you a chance at winning a prize every single day!<br>
+					If you're interested in seeing what I'm up to.<br> You can view my nfts
+					<a style="color: yellow;" href="https:\\opensea.io/0x957B022767E8427E08De78ab5445fF006Ab41f61" target="_blank">here,</a><br>
+					or my other crypto assets
+					<a style="color: yellow;" href="https://zapper.fi/account/0x957b022767e8427e08de78ab5445ff006ab41f61" target="_blank">here.</a>
+
+
+
+
+				</p>
+			</div>
+			<div class="col-md-6">
+				<img src="{% static 'img/domain.svg' %}" id="domain" class="img-fluid" alt="">
+
+			</div>
+		</div>
+
+	<!-- running -->
+		<div class="row" id="running">
+			<div class="col-md-4">
+				<img src="{% static 'img/XC.jpg' %}" id="xc" class="img-fluid" alt="">
+
+			</div>
+			<div class="col-md-4 text-center">
+				<p class="description">
+					I started running cross country in 9th grade and have thouroughly enjoyed it. Long runs give me a chance to sort out my thoughts, strengthen my body, soak in some sun, and enjoy the great outdoors. My personal records are: <br>
+					3200m: 13:55 <br>
+					5000m: 23:08 <br>
+				</p>
+
+			</div>
+
+			<div class="col-md-4">
+				<img src="{% static 'img/XCMedal.jpg' %}" id="xc" class="img-fluid" alt="">
+			</div>
+		</div>
+
+	<!-- water skiing -->
+	<!-- 3d art -->
+	<!-- strategy games -->
+	<!-- listening to music -->
+		<div class="row row-no-gutter" id="sky">
+			<div class="col-md-6 text-center">
+				<h1 id="waterskiing">Water Skiing</h1>
+				<p class="description">
+					During the summer I enjoy water skiing! It's a fun activity that helps keep you cool in the summer sun, also one of the perks of living on a lake.
+				</p>
+				<h1 id="art">3d art</h1>
+				<p class="description">
+					I've been learning how to use Blender. It's allowed me to create some cool looking scenes and animations.
+				</p>
+				<h1 id="games">Games</h1>
+				<p class="description">
+					I really enjoy strategy games! My top three being chess, risk, and poker. <br> Send me a friend request on chess.com and let's  <a style="color: yellow;" href="https://www.chess.com/member/aidenboulevard" target="_blank">play!</a>
+				</p>
+				<h1 id="music">Music</h1>
+				<p class="description">
+					I love listening to music! It can set the mood, help me relax, or keep me motivated on a long run. Currently my favorite artist is <a style="color: yellow;" href="https://open.spotify.com/artist/5Rl15oVamLq7FbSb0NNBNy" target="_blank">5 Seconds of Summer!</a> My favorite song would either be <a style="color: yellow;" href="https://open.spotify.com/album/2LkWHNNHgD6BRNeZI2SL1L?highlight=spotify:track:7lNqCbnqD6gQpfl5HquF1o" target="_blank">End Up Here</a> or <a style="color: yellow;" href="https://open.spotify.com/album/3mNoFlD1wsoXfkljfFzExT?highlight=spotify:track:4kbj5MwxO1bq9wjT5g9HaA" target="_blank">Shut Up and Dance</a>
+				</p>
+
+			</div>
+			<div class="col col-md-6">
+				<img src="{% static 'img/skiing2.jpg' %}" id="skiing" class="img-fluid" alt="">
+
+			</div>
+		</div>
+
+
+
+	<!-- photo editing -->
+		<div class="row" id="photo">
+			<div class="col-md-6">
+				<img src="{% static 'img/MeInMirror.jpg' %}" id="mirror" class="img-fluid" alt="">
+			</div>
+			<div class="col-md-6 text-center">
+				<p class="description">Occasionally I enjoy playing around with a photo editor called gimp. It's completely free and open source, and allows you to easily manipulate images!</p>
+
+
+			</div>
+		</div>		
+	</div>
+
+	<script type="text/javascript">
+		function myFunction() {
+		  var x = document.getElementById("collapsable");
+		  if (x.style.display == "block") {
+		    x.style.display = "none";
+		  } 
+		  else {
+		    x.style.display = "block";
+		  }
+		}
+
+	</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
