@@ -27,6 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')  == 'True'
 
+
 ALLOWED_HOSTS = ["https://aidendjangoapp.herokuapp.com/",
                  "http://127.0.0.1:8000/",
                  ]
